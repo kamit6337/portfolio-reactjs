@@ -1,4 +1,3 @@
-import { useEffect } from "react";
 import "./App.css";
 import Contact from "./components/contact/Contact";
 import Footer from "./components/footer/Footer";
@@ -9,10 +8,6 @@ import Projects from "./components/projects/Projects";
 import Skills from "./components/skills/Skills";
 
 function App() {
-  useEffect(() => {
-    document.title = "Portfolio | Amit Kumar";
-  }, []);
-
   return (
     <main className="relative w-screen h-full mt-20">
       <Hero id="hero" />
