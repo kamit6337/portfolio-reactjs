@@ -2,6 +2,7 @@ import addtocart from "./projects/addtocart.jpg";
 import chat from "./projects/chat.jpg";
 import notable from "./projects/notable.jpg";
 import vwflex from "./projects/vwflex.jpg";
+import sendit from "./projects/sendit.jpg";
 
 import restApi from "./skills/rest-api.png";
 import authentication from "./skills/authentication.png";
@@ -30,6 +31,7 @@ import google from "./google.png";
 import hashing from "./hashing.png";
 
 const CustomImages = {
+  sendit,
   reactjs,
   nextjs,
   nodejs,

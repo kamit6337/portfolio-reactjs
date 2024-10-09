@@ -25,19 +25,29 @@ const SingleProject = ({ project }: { project: Project }) => {
               className="w-full h-full object-cover rounded-xl"
             />
           </div>
-          <div className="grid grid-cols-2 gap-x-2">
-            <a href={github} target="_blank" rel="noreferrer">
-              <p className="flex justify-center items-center text-xl py-2 border rounded ">
+          <div className="flex  gap-x-2">
+            <a
+              href={github}
+              target="_blank"
+              rel="noreferrer"
+              className="flex-1"
+            >
+              <p className="flex justify-center items-center text-xl py-3 border rounded ">
                 {ReactIcons.github}
               </p>
             </a>
-            <a href={preview} target="_blank" rel="noreferrer">
+            {/* <a
+              href={preview}
+              target="_blank"
+              rel="noreferrer"
+              className="flex-1"
+            >
               <div
-                className={`hover:gradient_link_shadow text-center rounded py-2 cursor-pointer gradient_link text-white duration-200`}
+                className={`hover:gradient_link_shadow text-center rounded py-3 cursor-pointer gradient_link text-white duration-200`}
               >
                 Preview
               </div>
-            </a>
+            </a> */}
           </div>
         </div>
         <div className="flex-1 flex flex-col">

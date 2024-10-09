@@ -3,88 +3,18 @@ import ReactIcons from "../assets/icons/index";
 
 const ProjectsData = [
   {
-    title: "VwFlex",
-    category: "Video Streaming Application",
-    tech: "Next JS, Tailwind-CSS, Next-Auth, MongoDB, Mongoose, JsonWebToken",
-    image: CustomImages.vwflex,
-    github: "https://github.com/Kamit6337/vwflex",
+    title: "SendIt",
+    category: "Social Media Application",
+    tech: "React JS,Socket.io, React-Query, Tailwind-CSS, Node JS, Express JS, MongoDB, Mongoose, Passport.js, JsonWebToken, AWS, Docker",
+    image: CustomImages.sendit,
+    github: "https://github.com/kamit6337/send-It-client",
     preview: "https://vwflex.vercel.app",
     details: [
-      "It is like Netflix, Amazon Prime, Hotstar where a list of different categories/genres of movies/tv shows are provided",
-      "watch whichever you like, whenever you have free time",
-      "provide latest movies and tv shows and also the trending movies and tv shows in the app",
-      "search famous personality of entertainment industry around the world, you will get their biography and movies and tv shows collection",
+      "It's a social media website like Twitter where you can post, like, reply post and share post and also chat with members",
+      "follow and communicate to peoples all around the world",
       "login with email or password or login with much more trustworthy, Google OAuth2.0",
-      "gives recommendation based on movie/tv shows which you are currently watching",
-      "create your own watchlist of movie and tv shows to watch later",
-      "get access after paying subscription fee for a year, cancel anytime",
-    ],
-    icons: [
-      {
-        icon: ReactIcons.nextjs,
-        name: "Next JS",
-      },
-      {
-        icon: ReactIcons.tailwind,
-        name: "Tailwind CSS",
-      },
-      {
-        icon: (
-          <img width={40} height={40} alt="image" src={CustomImages.axios} />
-        ),
-        name: "Axios",
-      },
-      {
-        icon: (
-          <img
-            alt="image"
-            width={30}
-            height={30}
-            src={CustomImages.reactQuery}
-          />
-        ),
-        name: "React-Query",
-      },
-      {
-        icon: (
-          <img alt="image" width={25} height={25} src={CustomImages.nextAuth} />
-        ),
-        name: "Next-Auth",
-      },
-      {
-        icon: ReactIcons.mongodb,
-        name: "MongoDB",
-      },
-      {
-        icon: (
-          <img
-            src={CustomImages.mongoose}
-            alt="mongoose"
-            width={50}
-            height={50}
-          />
-        ),
-        name: "Mongoose",
-      },
-      {
-        icon: ReactIcons.jsonwebtoken,
-        name: "JWT",
-      },
-    ],
-  },
-  {
-    title: "Notable",
-    category: "CRUD based Application",
-    tech: "React JS,React-Quill, Socket.io, React-Query, Tailwind-CSS, Node JS, Express JS, MongoDB, Mongoose, Passport.js, JsonWebToken",
-    image: CustomImages.notable,
-    github: "https://github.com/Kamit6337/notable-client",
-    preview: "https://notable-client.vercel.app",
-    details: [
-      "here you can write your memories, study material, diaries and many more things",
-      "login with email or password or login with much more trustworthy, Google OAuth2.0",
-      "create notebook for each of the of category to segregate the topic",
-      "you can attach tag to each notes which help in filtering of notes",
-      "enabling text-editor to highlight or cutomise your text to make your notes much more readable and understandable to you",
+      "real-time response and chat features",
+      "search personality and follow them",
     ],
     icons: [
       {
@@ -102,12 +32,14 @@ const ProjectsData = [
         ),
         name: "React-Query",
       },
-
+      {
+        icon: ReactIcons.socketIO,
+        name: "SocketIO",
+      },
       {
         icon: ReactIcons.redux,
         name: "Redux",
       },
-
       {
         icon: ReactIcons.tailwind,
         name: "Tailwind CSS",
@@ -141,6 +73,7 @@ const ProjectsData = [
       },
     ],
   },
+
   {
     title: "Commercify",
     category: "E-Commerce Application",
@@ -222,6 +155,75 @@ const ProjectsData = [
           <img alt="image" width={40} height={40} src={CustomImages.axios} />
         ),
         name: "Axios",
+      },
+    ],
+  },
+  {
+    title: "Notable",
+    category: "CRUD based Application",
+    tech: "React JS,React-Quill, Socket.io, React-Query, Tailwind-CSS, Node JS, Express JS, MongoDB, Mongoose, Passport.js, JsonWebToken",
+    image: CustomImages.notable,
+    github: "https://github.com/Kamit6337/notable-client",
+    preview: "https://notable-client.vercel.app",
+    details: [
+      "here you can write your memories, study material, diaries and many more things",
+      "login with email or password or login with much more trustworthy, Google OAuth2.0",
+      "create notebook for each of the of category to segregate the topic",
+      "you can attach tag to each notes which help in filtering of notes",
+      "enabling text-editor to highlight or cutomise your text to make your notes much more readable and understandable to you",
+    ],
+    icons: [
+      {
+        icon: ReactIcons.reactjs,
+        name: "React JS",
+      },
+      {
+        icon: (
+          <img
+            alt="image"
+            width={30}
+            height={30}
+            src={CustomImages.reactQuery}
+          />
+        ),
+        name: "React-Query",
+      },
+
+      {
+        icon: ReactIcons.redux,
+        name: "Redux",
+      },
+
+      {
+        icon: ReactIcons.tailwind,
+        name: "Tailwind CSS",
+      },
+      {
+        icon: ReactIcons.nodejs,
+        name: "Node JS",
+      },
+      {
+        icon: ReactIcons.express,
+        name: "Express JS",
+      },
+      {
+        icon: ReactIcons.mongodb,
+        name: "MongoDB",
+      },
+      {
+        icon: (
+          <img
+            width={50}
+            height={50}
+            src={CustomImages.mongoose}
+            alt="mongoose"
+          />
+        ),
+        name: "Mongoose",
+      },
+      {
+        icon: ReactIcons.jsonwebtoken,
+        name: "JWT",
       },
     ],
   },
