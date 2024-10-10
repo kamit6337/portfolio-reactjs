@@ -8,7 +8,8 @@ const ProjectsData = [
     tech: "React JS,Socket.io, React-Query, Tailwind-CSS, Node JS, Express JS, MongoDB, Mongoose, Passport.js, JsonWebToken, AWS, Docker",
     image: CustomImages.sendit,
     github: "https://github.com/kamit6337/send-It-client",
-    preview: "https://vwflex.vercel.app",
+    preview:
+      "https://amit-general-bucket.s3.ap-south-1.amazonaws.com/videos/send-it.mp4",
     details: [
       "It's a social media website like Twitter where you can post, like, reply post and share post and also chat with members",
       "follow and communicate to peoples all around the world",
@@ -80,7 +81,8 @@ const ProjectsData = [
     tech: "React JS, React-Query, Tailwind-CSS, Redux, Node JS, Express JS, Passport.js, JsonWebToken, Stripe API, MongoDB, Mongoose, JsonWebToken",
     image: CustomImages.addtocart,
     github: "https://github.com/Kamit6337/commercify-client",
-    preview: "https://commercify-client.vercel.app",
+    preview:
+      "https://amit-general-bucket.s3.ap-south-1.amazonaws.com/videos/commercify.mp4",
     details: [
       "like Amazon, Flipkart or any other E-Commerce platform, see a collections of products of different categories",
       "login using mobile OTP which is gaining popularity now a days",
@@ -164,7 +166,8 @@ const ProjectsData = [
     tech: "React JS,React-Quill, Socket.io, React-Query, Tailwind-CSS, Node JS, Express JS, MongoDB, Mongoose, Passport.js, JsonWebToken",
     image: CustomImages.notable,
     github: "https://github.com/Kamit6337/notable-client",
-    preview: "https://notable-client.vercel.app",
+    preview:
+      "https://amit-general-bucket.s3.ap-south-1.amazonaws.com/videos/notable.mp4",
     details: [
       "here you can write your memories, study material, diaries and many more things",
       "login with email or password or login with much more trustworthy, Google OAuth2.0",

@@ -36,7 +36,7 @@ const SingleProject = ({ project }: { project: Project }) => {
                 {ReactIcons.github}
               </p>
             </a>
-            {/* <a
+            <a
               href={preview}
               target="_blank"
               rel="noreferrer"
@@ -47,7 +47,7 @@ const SingleProject = ({ project }: { project: Project }) => {
               >
                 Preview
               </div>
-            </a> */}
+            </a>
           </div>
         </div>
         <div className="flex-1 flex flex-col">
