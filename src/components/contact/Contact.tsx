@@ -1,7 +1,10 @@
 import ReactIcons from "@/assets/icons";
 import MapComponent from "./MapComponent";
+import { useState } from "react";
 
 const EMAIL = "amitprofessional007@gmail.com";
+const resumeUrl =
+  "https://amit-general-bucket.s3.ap-south-1.amazonaws.com/pdf/resume.pdf";
 const social_profile = [
   {
     title: "LinkedIn",
@@ -21,6 +24,7 @@ const social_profile = [
 ];
 const Contact = ({ ...props }) => {
   const location = { latitude: 25.266497, longitude: 82.989469 };
+  const [isHovered, setIsHovered] = useState(false);
 
   return (
     <main {...props}>
@@ -45,12 +49,26 @@ const Contact = ({ ...props }) => {
             );
           })}
         </div>
-        <p className="md:text-4xl text-3xl font-bold tracking-wide mt-20 mb-6">
+        <p className="md:text-4xl text-3xl font-bold tracking-wide mt-20">
           Contact Me
         </p>
-        <p className="md:text-2xl text-xl  font-semibold tracking-wider">
+        <p className="md:text-2xl text-xl  font-semibold tracking-wider mt-6 mb-10">
           {EMAIL}
         </p>
+        <a
+          href={resumeUrl}
+          target="_blank"
+          onMouseEnter={() => setIsHovered(true)}
+          onMouseLeave={() => setIsHovered(false)}
+        >
+          <div
+            className={`${
+              isHovered ? "gradient_link_shadow" : ""
+            } py-3 px-10 text-lg font-semibold text-white tracking-wider rounded-lg gradient_link`}
+          >
+            Resume
+          </div>
+        </a>
       </div>
     </main>
   );

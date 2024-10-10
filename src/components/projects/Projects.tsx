@@ -60,7 +60,7 @@ const Projects = ({ ...props }) => {
                       <div
                         className={`${
                           toggleShadow && i === index && "gradient_link_shadow"
-                        } mx-auto rounded-lg px-6 py-2 w-max gradient_link text-white duration-200 cursor-pointer`}
+                        } mx-auto btn gradient_link`}
                         onMouseEnter={() => handleMouseEnter(i)}
                         onMouseLeave={handleMouseLeave}
                       >

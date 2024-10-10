@@ -75,6 +75,10 @@
 }
 
 @layer utilities {
+  .btn {
+    @apply rounded-lg px-6 py-2 w-max text-white duration-200 cursor-pointer;
+  }
+
   .section_padding {
     @apply w-full px-5 sm:px-16 md:px-24 lg:px-40 xl:px-60;
   }
