@@ -96,6 +96,12 @@ export const skillsList = [
   },
   {
     id: generateRandomID(),
+    name: "Docker",
+    designation: "Next JS Authentication",
+    image: CustomImages.docker,
+  },
+  {
+    id: generateRandomID(),
     name: "Github",
     designation: "making User Session",
     image: CustomImages.github,
