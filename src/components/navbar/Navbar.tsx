@@ -2,6 +2,9 @@ import { navLinkList } from "@/constants";
 import { ModeToggle } from "../darkToggle/ModeToggle";
 import { useEffect, useState } from "react";
 import { HoverBorderGradient } from "../ui/hover-border-gradient";
+import ReactIcons from "@/assets/icons";
+
+const GithubLink = "https://github.com/Kamit6337";
 
 const Navbar = () => {
   const [activeLink, setActiveLink] = useState("");
@@ -86,7 +89,14 @@ const Navbar = () => {
           );
         })}
 
-        <ModeToggle />
+        <div className="flex items-center gap-5 h-full">
+          <a href={GithubLink} target="_blank" rel="noreferrer">
+            <p className="text-xl h-full rounded p-2  border border-slate-200 dark:border-none hover:bg-gray-100 dark:hover:bg-background dark:hover:brightness-75">
+              {ReactIcons.github}
+            </p>
+          </a>
+          <ModeToggle />
+        </div>
       </div>
     );
   }
@@ -114,7 +124,14 @@ const Navbar = () => {
           );
         })}
 
-        <ModeToggle />
+        <div className="flex items-center gap-5 h-full">
+          <a href={GithubLink} target="_blank" rel="noreferrer">
+            <p className="text-xl h-full rounded p-2  border border-slate-200 dark:border-none hover:bg-gray-100 dark:hover:bg-background dark:hover:brightness-75">
+              {ReactIcons.github}
+            </p>
+          </a>
+          <ModeToggle />
+        </div>
       </HoverBorderGradient>
     </div>
   );

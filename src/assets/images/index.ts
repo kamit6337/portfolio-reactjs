@@ -6,6 +6,14 @@ import sendit from "./projects/sendit.jpg";
 
 import restApi from "./skills/rest-api.png";
 import authentication from "./skills/authentication.png";
+import aws from "./skills/aws.png";
+import docker from "./skills/docker.png";
+import github from "./skills/github.png";
+import graphql from "./skills/graphql.png";
+import redis from "./skills/redis.png";
+import shadcn from "./skills/shadcn.jpg";
+import tailwindCSS from "./skills/tailwindCSS.png";
+import redux from "./skills/redux.svg";
 import jsonwebtoken from "./skills/jsonwebtoken.png";
 import mongoose from "./skills/mongoose.png";
 import multimedia from "./skills/multimedia.png";
@@ -31,6 +39,14 @@ import google from "./google.png";
 import hashing from "./hashing.png";
 
 const CustomImages = {
+  redux,
+  tailwindCSS,
+  shadcn,
+  redis,
+  graphql,
+  github,
+  aws,
+  docker,
   sendit,
   reactjs,
   nextjs,
