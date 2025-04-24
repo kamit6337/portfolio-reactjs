@@ -9,17 +9,17 @@ import Skills from "./components/skills/Skills";
 
 function App() {
   return (
-    <main className="relative w-screen h-full mt-20">
+    <>
+      <div className="section_padding sticky top-0 z-20 h-20 w-full flex items-center">
+        <Navbar />
+      </div>
       <Hero id="hero" />
       <Skills id="skills" />
       <Projects id="projects" />
       <PersonalDetails id="about" />
       <Contact id="contact" />
       <Footer />
-      <div className="section_padding fixed top-0 z-20 h-20 w-full flex items-center">
-        <Navbar />
-      </div>
-    </main>
+    </>
   );
 }
 
