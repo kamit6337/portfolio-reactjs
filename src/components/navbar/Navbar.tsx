@@ -7,7 +7,6 @@ import ReactIcons from "@/assets/icons";
 const GithubLink = "https://github.com/Kamit6337";
 
 const Navbar = () => {
-  const [activeLink, setActiveLink] = useState("");
   const [openLargeNav, setOpenLargeNav] = useState(false);
 
   useEffect(() => {
@@ -17,38 +16,6 @@ const Navbar = () => {
       document.body.style.overflowY = "auto"; // Ensure it resets if component unmounts
     };
   }, [openLargeNav]);
-
-  useEffect(() => {
-    const options = {
-      root: null,
-      rootMargin: "0px",
-      threshold: 0.1,
-    };
-
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          setActiveLink(entry.target.id);
-        }
-      });
-    }, options);
-
-    navLinkList.forEach((link) => {
-      const section = document.getElementById(link.href);
-      if (section) {
-        observer.observe(section);
-      }
-    });
-
-    return () => {
-      navLinkList.forEach((link) => {
-        const section = document.getElementById(link.href);
-        if (section) {
-          observer.unobserve(section);
-        }
-      });
-    };
-  }, []);
 
   const handleClick = (href: string) => {
     const selectedDiv = document.querySelector(href) as HTMLElement;
@@ -80,14 +47,10 @@ const Navbar = () => {
           {/* NOTE: FOR LARGER THAN MOBILE */}
           <div className="hidden w-full sm:flex justify-between items-center">
             {navLinkList.map((obj, i) => {
-              const isActive = activeLink === obj.href;
-
               return (
                 <div key={i}>
                   <p
-                    className={`navbar_link cursor-pointer hover:border-b hover:border-foreground
-                ${isActive ? "border-b border-foreground" : ""}
-                `}
+                    className={`navbar_link cursor-pointer hover:border-b hover:border-foreground`}
                     onClick={() => handleClick(`#${obj.href}`)}
                   >
                     {obj.name}
@@ -123,14 +86,10 @@ const Navbar = () => {
           </div>
           <div className="flex-1 flex flex-col gap-10 justify-center items-center">
             {navLinkList.map((obj, i) => {
-              const isActive = activeLink === obj.href;
-
               return (
                 <div key={i}>
                   <p
-                    className={`navbar_link h-5 cursor-pointer hover:border-b hover:border-foreground
-                ${isActive ? "border-b border-foreground" : ""}
-                `}
+                    className={`navbar_link h-5 cursor-pointer hover:border-b hover:border-foreground `}
                     onClick={() => {
                       handleClick(`#${obj.href}`);
                       setOpenLargeNav(false);
