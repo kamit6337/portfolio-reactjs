@@ -11,6 +11,14 @@ const Navbar = () => {
   const [openLargeNav, setOpenLargeNav] = useState(false);
 
   useEffect(() => {
+    document.body.style.overflowY = openLargeNav ? "hidden" : "auto";
+
+    return () => {
+      document.body.style.overflowY = "auto"; // Ensure it resets if component unmounts
+    };
+  }, [openLargeNav]);
+
+  useEffect(() => {
     const options = {
       root: null,
       rootMargin: "0px",
@@ -62,7 +70,9 @@ const Navbar = () => {
         >
           <button
             className="sm:hidden hover:scale-125 duration-200"
-            onClick={() => setOpenLargeNav(true)}
+            onClick={() => {
+              setOpenLargeNav(true);
+            }}
           >
             {ReactIcons.hamburger}
           </button>
@@ -100,9 +110,14 @@ const Navbar = () => {
 
       {/* NOTE: OPEN LARGE NAVBAR */}
       {openLargeNav ? (
-        <div className="absolute z-50 top-0 left-0 w-full h-screen flex flex-col bg-background">
+        <div className="absolute z-50 top-0 left-0 w-full h-dvh flex flex-col bg-background">
           <div className="h-20 flex items-center px-10">
-            <button className="text-2xl" onClick={() => setOpenLargeNav(false)}>
+            <button
+              className="text-2xl"
+              onClick={() => {
+                setOpenLargeNav(false);
+              }}
+            >
               {ReactIcons.cancel}
             </button>
           </div>
