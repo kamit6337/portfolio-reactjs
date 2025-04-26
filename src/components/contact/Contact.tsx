@@ -28,7 +28,6 @@ const Contact = ({ ...props }) => {
 
   return (
     <main {...props}>
-      <p>Contact</p>
       <div className="h-[500px] w-full z-0">
         <MapComponent
           latitude={location.latitude}
